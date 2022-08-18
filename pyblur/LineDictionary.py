@@ -17,7 +17,7 @@ class LineDictionary:
         return
 
     def Create5x5Lines(self):
-        lines = {}        
+        lines = {}
         lines[0] = [2,0,2,4]
         lines[22.5] = [3,0,1,4]
         lines[45] = [0,4,4,0]

@@ -14,7 +14,7 @@ lineDict = LineDictionary()
 
 def LinearMotionBlur_random(img):
     lineLengthIdx = np.random.randint(0, len(lineLengths))
-    lineTypeIdx = np.random.randint(0, len(lineTypes)) 
+    lineTypeIdx = np.random.randint(0, len(lineTypes))
     lineLength = lineLengths[lineLengthIdx]
     lineType = lineTypes[lineTypeIdx]
     lineAngle = randomAngle(lineLength)
@@ -42,7 +42,7 @@ def LineKernel(dim, angle, linetype):
     rr,cc = line(lineAnchors[0], lineAnchors[1], lineAnchors[2], lineAnchors[3])
     kernel[rr,cc]=1
     normalizationFactor = np.count_nonzero(kernel)
-    kernel = kernel / normalizationFactor        
+    kernel = kernel / normalizationFactor
     return kernel
 
 def SanitizeAngleValue(kernelCenter, angle):

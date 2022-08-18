@@ -7,7 +7,7 @@ from skimage.draw import circle_perimeter as circle
 defocusKernelDims = [3,5,7,9]
 
 def DefocusBlur_random(img):
-    kernelidx = np.random.randint(0, len(defocusKernelDims))    
+    kernelidx = np.random.randint(0, len(defocusKernelDims))
     kerneldim = defocusKernelDims[kernelidx]
     return DefocusBlur(img, kerneldim)
 

@@ -6,7 +6,7 @@ class LineDictionary:
         self.Create7x7Lines()
         self.Create9x9Lines()
         return
-    
+
     def Create3x3Lines(self):
         lines = {}
         lines[0] = [1,0,1,2]
@@ -15,7 +15,7 @@ class LineDictionary:
         lines[135] = [0,0,2,2]
         self.lines[3] = lines
         return
-    
+
     def Create5x5Lines(self):
         lines = {}        
         lines[0] = [2,0,2,4]
@@ -28,7 +28,7 @@ class LineDictionary:
         lines[157.5]= [1,0,3,4]
         self.lines[5] = lines
         return
-        
+
     def Create7x7Lines(self):
         lines = {}
         lines[0] = [3,0,3,6]
@@ -45,7 +45,7 @@ class LineDictionary:
         lines[165] = [2,0,4,6]
         self.lines[7] = lines 
         return
-    
+
     def Create9x9Lines(self):
         lines = {}
         lines[0] = [4,0,4,8]

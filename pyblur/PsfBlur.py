@@ -17,9 +17,7 @@ def PsfBlur(img, psfid):
     convolved = convolve2d(imgarray, kernel, mode='same', fillvalue=255.0).astype("uint8")
     img = Image.fromarray(convolved)
     return img
-    
+
 def PsfBlur_random(img):
     psfid = np.random.randint(0, len(psfDictionary))
     return PsfBlur(img, psfid)
-    
-    

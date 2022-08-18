@@ -24,13 +24,13 @@ def DiskKernel(dim):
     kernel = np.zeros((kernelwidth, kernelwidth), dtype=np.float32)
     circleCenterCoord = dim / 2
     circleRadius = circleCenterCoord +1
-    
+
     rr, cc = circle(circleCenterCoord, circleCenterCoord, circleRadius)
     kernel[rr,cc]=1
-    
+
     if(dim == 3 or dim == 5):
         kernel = Adjust(kernel, dim)
-        
+
     normalizationFactor = np.count_nonzero(kernel)
     kernel = kernel / normalizationFactor
     return kernel
